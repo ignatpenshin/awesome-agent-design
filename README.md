@@ -6,7 +6,7 @@
 
 <br>
 
-[![Book](https://img.shields.io/badge/Read_Online-00f0ff?style=for-the-badge&logo=bookstack&logoColor=white)](https://ignatpenshin.github.io/agent-design/)
+[![Book](https://img.shields.io/badge/Read_Online-00f0ff?style=for-the-badge&logo=bookstack&logoColor=white)](https://ignatpenshin.github.io/awesome-agent-design/)
 [![PDF](https://img.shields.io/badge/Download_PDF-ff00e5?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](#generating-pdf)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-39ff14?style=for-the-badge)](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -66,8 +66,8 @@ This book covers everything you need to design, build, and operate production-gr
 cargo install mdbook
 
 # Clone and serve
-git clone https://github.com/ignatpenshin/agent-design.git
-cd agent-design
+git clone https://github.com/ignatpenshin/awesome-agent-design.git
+cd awesome-agent-design
 mdbook serve --open
 ```
 
@@ -87,7 +87,7 @@ cargo install mdbook-pdf
 mdbook build  # PDF generated automatically in book/
 
 # Option 3: Pandoc (single-file)
-pandoc src/*.md -o agent-design.pdf \
+pandoc src/*.md -o awesome-agent-design.pdf \
   --toc --toc-depth=3 \
   --pdf-engine=xelatex \
   -V geometry:margin=1in \
@@ -111,7 +111,7 @@ pandoc src/*.md -o agent-design.pdf \
 ## Project Structure
 
 ```
-agent-design/
+awesome-agent-design/
 ├── book.toml              # mdBook configuration
 ├── src/
 │   ├── SUMMARY.md         # Table of contents

@@ -12,10 +12,10 @@ create-missing = false
 [output.html]
 default-theme = "coal"
 preferred-dark-theme = "coal"
-git-repository-url = "https://github.com/ignatpenshin/agent-design"
+git-repository-url = "https://github.com/ignatpenshin/awesome-agent-design"
 additional-css = ["theme/css/neon.css"]
 no-section-label = false
-site-url = "/agent-design/"
+site-url = "/awesome-agent-design/"
 
 [output.html.fold]
 enable = true

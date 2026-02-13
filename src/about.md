@@ -14,7 +14,7 @@ This book is the result of extensive research, hands-on implementation, and a de
 
 This book is open source. If you find errors, want to suggest improvements, or wish to contribute new content:
 
-- **GitHub:** [github.com/ignatpenshin/agent-design](https://github.com/ignatpenshin/agent-design)
+- **GitHub:** [github.com/ignatpenshin/awesome-agent-design](https://github.com/ignatpenshin/awesome-agent-design)
 - **Issues:** Report errors or request new topics via GitHub Issues
 - **Pull Requests:** Contributions are welcome — see the repository for guidelines
 
