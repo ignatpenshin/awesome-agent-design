@@ -1,0 +1,32 @@
+[book]
+authors = ["Ignat Penshin"]
+language = "en"
+src = "src"
+title = "Agentic AI: The Definitive Guide to Designing Autonomous LLM Systems"
+description = "A comprehensive guide to multi-agent architectures, orchestration patterns, RAG systems, prompt optimization, and production-grade agent infrastructure."
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "coal"
+preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/ignatpenshin/agent-design"
+additional-css = ["theme/css/neon.css"]
+no-section-label = false
+site-url = "/agent-design/"
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.playground]
+editable = false
+copyable = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+boost-hierarchy = 2
