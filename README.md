@@ -6,8 +6,6 @@
 
 <br>
 
-[![Book](https://img.shields.io/badge/Read_Online-00f0ff?style=for-the-badge&logo=bookstack&logoColor=white)](https://ignatpenshin.github.io/awesome-agent-design/)
-[![PDF](https://img.shields.io/badge/Download_PDF-ff00e5?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](#generating-pdf)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-39ff14?style=for-the-badge)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 <br>
@@ -57,54 +55,11 @@ This book covers everything you need to design, build, and operate production-gr
 
 ---
 
-## Quick Start
-
-### Read Online (Recommended)
-
-```bash
-# Install mdBook
-cargo install mdbook
-
-# Clone and serve
-git clone https://github.com/ignatpenshin/awesome-agent-design.git
-cd awesome-agent-design
-mdbook serve --open
-```
-
-### Read on GitHub
+## How to Use
 
 Every chapter is a standalone Markdown file in the [`src/`](src/) directory — fully readable directly on GitHub.
 
-### Generating PDF
-
-```bash
-# Option 1: mdBook + Chrome print
-mdbook build
-# Open book/index.html in Chrome → Print → Save as PDF
-
-# Option 2: Using mdbook-pdf (automated)
-cargo install mdbook-pdf
-mdbook build  # PDF generated automatically in book/
-
-# Option 3: Pandoc (single-file)
-pandoc src/*.md -o awesome-agent-design.pdf \
-  --toc --toc-depth=3 \
-  --pdf-engine=xelatex \
-  -V geometry:margin=1in \
-  -V fontsize=11pt \
-  --highlight-style=breezedark
-```
-
----
-
-## Tech Stack
-
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| Book Engine | [mdBook](https://rust-lang.github.io/mdBook/) | Static site generation |
-| Theme | Custom Neon CSS | Cyberpunk dark theme with neon accents |
-| Deployment | GitHub Pages | Free hosting via GitHub Actions |
-| PDF Export | mdbook-pdf / Pandoc | Offline reading |
+**Open README → click a chapter → deep-dive into the topic.**
 
 ---
 
@@ -112,9 +67,7 @@ pandoc src/*.md -o awesome-agent-design.pdf \
 
 ```
 awesome-agent-design/
-├── book.toml              # mdBook configuration
 ├── src/
-│   ├── SUMMARY.md         # Table of contents
 │   ├── introduction.md    # Book introduction
 │   ├── ch01-*.md          # Chapter 1: Multi-Agent Architecture
 │   ├── ch02-*.md          # Chapter 2: Agent Frameworks
@@ -127,12 +80,7 @@ awesome-agent-design/
 │   ├── ch09-*.md          # Chapter 9: System Design
 │   ├── references.md      # All references & resources
 │   └── about.md           # About the author
-├── theme/
-│   └── css/
-│       └── neon.css       # Custom neon dark theme
-└── .github/
-    └── workflows/
-        └── deploy.yml     # GitHub Pages deployment
+└── README.md
 ```
 
 ---
